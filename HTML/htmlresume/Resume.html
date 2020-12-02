@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+
+<link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Nunito+Sans:wght@200&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+
+<html>
+<head>
+<style>
+html{
+	background: url("background.jpg") no-repeat center center fixed;
+	background-size:cover;
+}
+
+#header {
+	max-width:1280px;
+	background-color:#407088;
+	border-radius: 10px;
+	text-align:center;
+	padding:10px;
+	margin:0 auto;
+}
+#header #info{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	    -ms-flex-direction:column;
+	        flex-direction:column;
+	-webkit-box-pack:center;
+	    -ms-flex-pack:center;
+	        justify-content:center;
+}
+#header h1{
+	font-family:'Berkshire Swash', cursive;
+	font-size:60px;
+	color:#fff;
+	margin:20px auto 10px;
+	letter-spacing:5px;
+}
+#header .tile{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient:horizontal;
+	-webkit-box-direction:normal;
+	    -ms-flex-direction:row;
+	        flex-direction:row;
+	margin:5px auto;
+	-webkit-box-align:center;
+	    -ms-flex-align:center;
+	        align-items:center;
+}
+#header .tile img{
+	width:30px;
+	-webkit-filter:drop-shadow(3px 3px 0.3em #407088);
+	        filter:drop-shadow(3px 3px 0.3em #407088);
+}
+#header #info #address img{width:60px;}
+#header .tile h2{
+	font-family:'Nunito Sans', sans-serif;
+	font-size:15px;
+	color:#fff;
+	margin:0;
+	margin-left:10px;
+	line-height:1;
+}
+#header .tile h2:link{color: #fff;}
+#header #address h2{height:28px;}
+#header #email h2, #header #phone h2{height:14px;}
+
+@media screen and (min-width:768px){
+	#header{padding:20px 0;}
+	#header h1{margin:0px auto 10px;}
+	#header #info{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;}
+	#header #info #address img{width:30px; height:30px;}
+	#header #info .tile{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column; text-align:center; -webkit-box-align:center; -ms-flex-align:center; align-items:center; margin:0px 25px;}
+	#header #info .tile h2{font-size:20px;}
+	#header #info .tile img{margin-bottom:7px;}
+}
+</style>
+	<div id="header">
+		<h1> Maria Ringes </h1>
+		<div id="info">
+		<div id="email" class="tile"> 
+			<img src = "https://simpleicon.com/wp-content/uploads/mail-5.png">
+			<h2> m.ringes@me.com </h2>
+		</div>
+		<div id="address" class="tile"> 
+			<img src = "https://www.flaticon.com/svg/static/icons/svg/25/25694.svg">
+			<h2> 12 Sleepy Hollow Road, <br class="s"> Sandy Hook, CT 06482 </h2>
+		</div>
+		<div id="phone" class="tile"> 
+			<img src = "https://freeiconshop.com/wp-content/uploads/edd/phone-solid.png">
+			<h2> 203-491-7089 </h2>
+		</div>
+		</div>
+	</div>
+</head>
+<body>
+<style>
+#middle {display:-webkit-box;display:-ms-flexbox;display:flex; -webkit-box-orient:vertical; -webkit-box-direction:normal; -ms-flex-direction:column; flex-direction:column; max-width:1280px; margin:0 auto; margin-top:10px;}
+#middle .tile{text-align:center; -webkit-box-align:center; -ms-flex-align:center; align-items:center;}
+#middle .tile .inside{background-color:#70adb5; border-radius:10px; display:-webkit-box; display:-ms-flexbox; display:flex; -webkit-box-orient:vertical; -webkit-box-direction:normal; -ms-flex-direction:column; flex-direction:column; -webkit-box-align:center; -ms-flex-align:center; align-items:center; padding:0px 10px; margin:5px auto;}
+#middle .tile .inside a br{display:none;}
+#middle .tile .inside h3 br{display:none;}
+#middle .tile h2{
+	font-family:'Nunito Sans', sans-serif;
+	font-size:20px;
+	margin:0 auto;
+	text-decoration:underline;
+	color:#132743;
+	display:none;
+}
+#middle .tile .inside h2{
+	font-family:'Nunito Sans', sans-serif;
+	font-size:20px;
+	margin:0 auto;
+	text-decoration:underline;
+	color:#fff;
+	display:inline;
+	margin-bottom:10px;
+}
+#middle .tile h3{
+	font-family:'Nunito Sans', sans-serif;
+	font-weight:400;
+	font-size:15px;
+	margin:0 auto;
+	color:#fff;
+}
+#middle #educ .inside #degree, #middle #educ .inside #minor{display:-webkit-box;display:-ms-flexbox;display:flex; -webkit-box-orient:horizontal; -webkit-box-direction:normal; -ms-flex-direction:row; flex-direction:row;}
+#middle #educ .inside #degree img, #middle #educ .inside #minor img{width:20px; height:20px; margin-right:10px;}
+#middle #educ a{margin:0 auto;}
+#middle #educ a h3{text-decoration:underline;}
+#middle #educ .inside img{height:60px; width:60px;}
+#middle #qual .inside p{
+	font-family:'Nunito Sans', sans-serif;
+	font-size:15px;
+	margin:0 auto;
+	color:#fff;
+}
+#middle #course .inside p{
+	font-family:'Nunito Sans', sans-serif;
+	font-size:15px;
+	margin:0 auto;
+	color:#fff;
+	display:inline;
+}
+@media screen and (min-width:768px){
+	#middle {-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;}
+	#middle .tile h2{display:inline;}
+	#middle .tile .inside h2{display:none;}
+	#middle .tile {width:30%; margin:10px auto;}
+	#middle .tile .inside{height:132px; -webkit-box-pack:center; -ms-flex-pack:center; justify-content:center;}
+	#middle #educ .inside{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;}
+	#middle #educ .inside a br{display:inline;}
+	#middle #educ .inside h3 br{display:none;}
+	#middle #educ .inside img{display:none;}
+}
+@media screen and (min-width:1280px){
+	#middle .tile .inside{height:110px;}
+}
+</style>
+<div id="middle">
+	<div id="educ" class="tile">
+		<h2>Education</h2>
+		<div class="inside">
+			<h2> Education </h2>
+			<img src="https://www.bc.edu/content/bc-web/offices/office-of-university-communications/policies-guidelines/graphic-identity-system/_jcr_content/par/responsive_columns/col1/bc_image_content/image.img.png/1550507443010.png">
+			<h3>Boston College, <br> Chestnut Hill MA</h3>
+			<div id="degree">
+				<img src="https://simpleicon.com/wp-content/uploads/computer-5.png">
+				<a href="https://www.bc.edu/bc-web/schools/mcas/departments/computer-science/academics/programs.html#bachelor_of_science"><h3>B.S. <br class="l"> Computer Science</h2></a>
+			</div>
+			<div id="minor">
+				<img src="https://simpleicon.com/wp-content/uploads/calculator.png">
+				<a href="https://www.bc.edu/bc-web/schools/mcas/departments/math/undergraduate/majors-and-minors.html"><h3>Minor Mathematics <h3></a>
+			</div>
+			<h3>December 2021</h4>
+		</div>
+	</div>
+	<div id="qual" class="tile">
+		<h2>Qualifications</h2>
+		<div class="inside">
+			<h2>Qualifications</h2>
+			<p> Engaged, creative. Conceptual and diagnostic with exemplary work ethic. Seeking to leverage strong leadership, analytical and coding skills.</p>
+		</div>
+	</div>
+	<div id="course" class="tile">
+		<h2>Related Courses</h2>
+		<div class="inside">
+			<h2>Related Courses</h2>
+			<div id="names">
+			<p> <nobr>&bull; Computer Science I & II</nobr> </p>
+			<p> <nobr>&bull; Logic & Computation</nobr></p>
+			<p> <nobr>&bull; Randomness & Computation</nobr></p>
+			<p> <nobr>&bull; Computer Organization</nobr></p>
+			<p> <nobr>&bull; Computer Systems</nobr></p>
+			<p> <nobr>&bull; Algorithms</nobr></p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<style>
+#techtotal{background-color:#407088; border-radius:10px; max-width:1280px; margin:0 auto; margin-top:5px;}
+#techtotal .label{
+	font-family: 'Nunito Sans', sans-serif;
+	font-size:20px;
+	margin:0 auto;
+	text-decoration:underline;
+	color:#ffffff;
+	text-align:center;
+	padding-top:10px;
+}
+#tech {display:-webkit-box;display:-ms-flexbox;display:flex; -webkit-box-orient:vertical; -webkit-box-direction:normal; -ms-flex-direction:column; flex-direction:column; -webkit-box-pack:center; -ms-flex-pack:center; justify-content:center; padding:10px 10px;}
+#tech .row {display:-webkit-box;display:-ms-flexbox;display:flex; -webkit-box-orient:horizontal; -webkit-box-direction:normal; -ms-flex-direction:row; flex-direction:row; -webkit-box-pack:center; -ms-flex-pack:center; justify-content:center;}
+#tech .btm {margin-top:10px;}
+#tech .row .tile{background-color:#fff; border-radius:10px; text-align:center;}
+
+#tech .row #DC{width:60%; margin-right:20px;}
+#tech .row #languages{width:30%;}
+#tech .row #exposure{width:30%; margin-right:20px;}
+#tech .row #other{width:30%;}
+
+#tech #btm{margin-top:20px;}
+#tech .row .tile h3{
+    color:#000;
+	font-family:'Nunito Sans', sans-serif;
+	font-size:20px;
+	margin:0 auto;
+	text-decoration:underline;
+	padding-top:10px;
+}
+#tech .row .tile p{
+	font-family:'Nunito Sans', sans-serif;
+	font-size: 15px;
+}
+#tech #top #DC img{width:40px;}
+
+@media screen and (min-width:480px){
+	#tech .row{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;}
+}
+@media screen and (min-width:768px){
+	#tech {-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;}
+	#tech #btm{margin-top:0; width:40%;}
+	#tech #top {width:60%;}
+	#tech .row #DC{width:60%;}
+	#tech .row #languages{width:30%;}
+	#tech .row #exposure{width:45%;}
+	#tech .row #other{width:45%;}
+}
+</style>
+<div id="techtotal">
+<h3 class="label">Technical Skills</h3>
+<div id="tech">
+	<div id="top" class="row">
+		<div id="DC" class="tile">
+			<h3> Digital Certifications </h3>
+			<div id="IBM" class="tile"> 
+					<p> Cognitive Practitioner </p>
+					<p> Databases & SQL for Data Science </p>
+					<p> Python for Data Science </p>
+					<p> Applied Data Science with Python </p>
+					<p> Data Science Foundation </p>
+					<p> Machine Learning with R and Python </p>
+			</div>
+		</div>
+		<div id="languages" class="tile">
+			<h3> Languages </h3>
+				<p> HTML5 </p>
+				<p> CSS3 </p>
+				<p> Python </p>
+				<p> Java </p>
+				<p> C </p>
+				<p> Verilog </p>
+		</div>
+	</div> <!-- End Top -->
+		<div id="btm" class="row">
+		<div id="exposure" class="tile">
+			<h3> Exposed To </h3>
+				<p> Swift </p>
+				<p> XCode </p>
+				<p> iOS13 SDK </p>
+				<p> CocoaPods </p>
+				<p> Git </p>
+				<p> R </p>
+		</div>
+		<div id="other" class="tile">
+			<h3> Other </h3>
+				<p>Visio</p>
+				<p>Excel</p>
+				<p>Word</p>
+				<p>Powerpoint</p>
+		</div>
+	</div> <!-- End Bottom -->
+</div>
+</div>
+
+<style>
+#exp{background-color:#132743; text-align:center; border-radius:10px; margin:15px auto; max-width:1200px; padding:10px 20px 20px 20px;}
+#exp h3{
+	font-family: 'Nunito Sans', sans-serif;
+	font-size:20px;
+	margin:0 auto;
+	text-decoration:underline;
+	color:#ffffff;
+}
+#exp .comp{display:-webkit-box;display:-ms-flexbox;display:flex; -webkit-box-orient:vertical; -webkit-box-direction:normal; -ms-flex-direction:column; flex-direction:column; background-color:#ffcbcb; -webkit-box-pack:center; -ms-flex-pack:center; justify-content:center; border-radius:10px; margin:10px auto; max-width:1000px;}
+#exp .comp .top{
+   display:-webkit-box;
+   display:-ms-flexbox;
+   display:flex; 
+   -webkit-box-orient:vertical; 
+   -webkit-box-direction:normal; 
+       -ms-flex-direction:column; 
+           flex-direction:column; 
+   -webkit-box-align:center; 
+       -ms-flex-align:center; 
+           align-items:center;
+   -webkit-box-pack:center;
+       -ms-flex-pack:center;
+           justify-content:center;
+   margin-top:10px;
+}
+#exp .comp .top img{max-width:150px; width:70%; -webkit-filter:drop-shadow(3px 3px 0.3em #407088); filter:drop-shadow(3px 3px 0.3em #407088);}
+#exp .comp .top h3{
+	font-family: 'Nunito Sans', sans-serif;
+	font-size:15px;
+	font-weight:700;
+	margin:10px auto 0;
+	color:#000;
+	line-height:1;
+}
+#exp .comp .top p{
+	font-family:'Nunito Sans', sans-serif;
+	font-size:15px;
+	font-weight:400;
+	color:#000;
+	line-height:1;
+	margin: 10px auto 0px;
+}
+#exp .comp .top p.second{margin:5px auto 0px;}
+#exp .comp .top .s{display:none;}
+#exp .comp .top .m{display:none;}
+
+#exp .comp .btm{text-align:center; padding-right:5px;}
+#exp .comp .btm p{
+	font-family:'Nunito Sans', sans-serif;
+	font-size:15px;
+	font-weight:400;
+	color:#000;
+	line-height:1;
+	margin:10px auto 5px;
+}
+#exp .comp .btm ul{padding-left:30px; margin:0px auto;}
+#exp .comp .btm ul li{
+	font-family:'Nunito Sans', sans-serif;
+	font-size:15px;
+	font-weight:400;
+	color:#000;
+	line-height:1;
+	padding-bottom:5px;
+}
+@media screen and (min-width:480px){
+	#exp .comp {-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;}
+	#exp .comp .top{width:25%; margin:10px auto;}
+	#exp .comp .top .s{display:inline;}
+	#exp .comp .top .m{display:none;}
+	#exp .comp .top .l{display:none;}	
+	#exp .comp .btm{width:70%; text-align:left; padding:15px 10px 15px 0px;}
+	#exp .comp .btm p{margin:0px auto;}
+	#exp .comp .btm ul {margin-top:10px;}
+}
+@media screen and (min-width:680px){
+	#exp {padding:10px 40px 40px 40px;}
+	#exp .comp .top .s{display:none;}
+	#exp .comp .top .m{display:inline;}
+	#exp .comp .top .l{display:none;}
+}
+</style>
+
+<div id="exp">
+	<h3> Experience </h3>
+	<div id="colony" class="comp">
+		<div class="top">
+			<img src="https://cdncom.cfigroup.com/wp-content/uploads/2017/02/colony-brands-logo-300x124.png">
+			<h3>Web Developer Intern</h3>
+			<p class="s">6 mon.</p>
+			<p class="m">06.2020 &mdash; 12.2020</p>
+			<p class="l">June 2020 &mdash; December 2020</p>
+		</div>
+		<div class="btm">
+			<p> <strong>Responsibilities</strong> </p>
+			<ul class="list">
+				<li> Write clean, responsive code using <strong>HTML and CSS</strong> based on designs received from creative and product/brand teams.</li>
+				<li> <strong>Develop</strong> code solutions for landing pages, home pages, online catalogs, banners, coupon pages, and information pages. </li>
+				<li> Assist senior developers with <strong>effective implementation</strong> of templates for newly staged eCommerce projects. </li>
+				<li> <strong>Troubleshoot</strong> front-end technical or performances issues using Salesforce eCommerce Cloud. </li>
+				<li> Work on a <strong>cross-functional agile</strong> team, managing daily tasks with implemented scrum methodology and real-time insight into projects organized by Workfront software. </li>
+			</ul>
+		</div>
+	</div>
+	<div id="wmc" class="comp">
+		<div class="top">
+			<img src="wmctrans.png">
+			<h3>Manager</h3>
+			<p class="s">1yr. 3mon.</p>
+			<p class="m">01.2019 &mdash; 03.2020</p>
+			<p class="l">January 2019 &mdash; March 2020</p>
+		</div>
+		<div class="btm">
+			<p> <strong>Responsibilities</strong> </p>
+			<ul class="list">
+				<li> Provide exceptional <strong>customer experience</strong> for clientele by delivering efficient and quality service in a fast paced environment. </li>
+				<li> First point of contact with guests, conveying a <strong>friendly atmosphere</strong> at Creamery. </li>
+				<li> Ensure <strong>efficient operation</strong>, including store organization, inventory, calculating daily income and training of new employees. </li>
+			</ul>
+		</div>
+	</div>
+	<div id="ibm" class="comp">
+		<div class="top">
+			<img src="https://www.livingstone-tech.com/wp-content/uploads/2019/06/ibm-logo-png-transparent-background.png">
+			<h3>Patent Professional Intern</h3>
+			<p class="s">6 mon.</p>
+			<p class="m">05.2018 &mdash; 08.2018</p>
+			<p class="m second">05.2019 &mdash; 08.2019</p>
+			<p class="l">May 2018 &mdash; August 2018</p>
+			<p class="second l">May 2019 &mdash; August 2019</p>
+		</div>
+		<div class="btm">
+			<p> <strong>Responsibilities</strong> </p>
+			<ul class="list">
+				<li> Learn the basics of patent law with an emphases on the <strong>preparation and prosecution</strong> of patent applications.</li>
+				<li> Work in a <strong>dynamic, fast-paced, work environment</strong> learning how to protect emerging technologies and to develop and share best practices with the team. </li>
+				<li> Review invention disclosures and relevant patent law to facilitate <strong>drafting of technical specifications</strong> relative to disclosed inventions.</li>
+				<li> <strong>Draft claims</strong> after distinguishing existing claims from identified prior art. </li>
+				<li> <strong>Interview</strong> inventors to understand details of invention and align disclosure with technical specifications. </li>
+				<li> After consensus with inventors, use of judgement to further <strong>add precise data or ideas</strong> that would enhance the provided disclosure. </li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<style>
+#acttotal{background-color:#407088; border-radius:10px; margin:0 auto; max-width:1280px;}
+#acttotal h3{
+	font-family: 'Nunito Sans', sans-serif;
+	font-size:20px;
+	margin:0 auto;
+	text-decoration:underline;
+	color:#ffffff;
+	text-align:center;
+	padding-top:10px;
+}
+#act {display:-webkit-box;display:-ms-flexbox;display:flex; -webkit-box-orient:vertical; -webkit-box-direction:normal; -ms-flex-direction:column; flex-direction:column; max-width:668px; margin:0 auto;}
+#act .tile{text-align:center; background-color:#70adb5; border-radius:20px; padding:10px; margin:10px;}
+#act #relay{margin-top:0px;}
+#act .tile img{max-width:120px; height:100px; width:100px;}
+#act .tile h3{
+	font-family: 'Nunito Sans', sans-serif;
+	font-size:15px;
+	font-weight:700;
+	margin:0 auto;
+	color:#000;
+	line-height:1;
+	margin-top:5px;
+	text-decoration:none;
+}
+#act .tile h2{
+	font-family: 'Nunito Sans', sans-serif;
+	font-size:15px;
+	font-weight:400;
+	margin:5px auto 0px;
+	color:#000;
+	line-height:1;
+}
+#act .extra{display:none;}
+#act #clc img{border-radius:50%;}
+
+@media screen and (min-width:400px){
+	#act{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;}
+	#act .row{width:50%;}
+	#act .left{margin: 10px 5px 10px 10px;}
+	#act .right{margin: 10px 10px 10px 5px;}
+	#act #relay{margin-top:10px;}
+}
+@media screen and (min-width:1025px){
+	#act{max-width:none;}
+	#act .extra{display:inline;}
+	#act .row{display:-webkit-box;display:-ms-flexbox;display:flex; -webkit-box-orient:horizontal; -webkit-box-direction:normal; -ms-flex-direction:row; flex-direction:row; -ms-flex-pack:distribute; justify-content:space-around;}
+}
+</style>
+<div id="acttotal">
+	<h3> Leadership </h3>
+<div id="act">
+	<div id="top" class="row">
+	<div id="soccer" class="tile left extra">
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Football_%28soccer_ball%29.svg/1200px-Football_%28soccer_ball%29.svg.png">
+		<h3> Intramural Soccer <br>Captain </h3>
+		<h2>2019,2020</h2>
+	</div>
+	<div id="arrupe" class="tile left first">
+		<img src="https://www.pngarts.com/files/1/Globe-PNG-Pic.png">
+		<h3>Arrupe Intl. Program <br>Participant</h3>
+		<h2>2019</h2>
+	</div>
+	<div id="campusmin" class="tile left">
+		<img src="campusmin.png">
+		<h3> Ignite Retreat <br> Leader & Participant </h3>
+		<h2>2018,2019</h2>
+	</div>
+	</div>
+	<div id="btm" class="row">
+	<div id="relay" class="tile right first">
+		<img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/54/American_Cancer_Society_Relay_For_Life_Logo.png/220px-American_Cancer_Society_Relay_For_Life_Logo.png">
+		<h3>Relay for Life <br>Committee Member</h3>
+		<h2>2019,2020</h2>
+	</div>
+	<div id="clc" class="tile right">
+		<img src="CLC.jpg">
+		<h3>CLC <br>Leader & Participant</h3>
+		<h2>2018,2019</h2>
+	</div>
+	<div id="sub" class="tile right extra">
+		<img src="https://pngimg.com/uploads/camera_lens/camera_lens_PNG75.png">
+		<h3>SubTurri <br>Photography Staff</h3>
+		<h2>2018,2019,2020</h2>
+	</div>
+	</div>
+</div>
+</div>
+</body>
+</html>
